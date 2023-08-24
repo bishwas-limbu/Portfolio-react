@@ -1,0 +1,35 @@
+
+:root{
+    --theme-background-color : #111111;
+    --theme-main-color : #F8F8F8;
+    --theme-sub-text-color : #ffffff;
+    --theme-nav-background-color :#181818;
+    --green: #72b626;
+    --nero: #252525;
+    --darkGreen: #5b7553;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*box-sizing property allows us to include the padding and border in an element's total width and height. */
+    scroll-behavior: smooth; /*property adds smooth scrolling behavior when navigating between page sections using anchor links.*/
+}
+body{
+    overflow-y: scroll; 
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+ul {
+    list-style: none;
+}
