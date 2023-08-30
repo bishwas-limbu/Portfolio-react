@@ -7,7 +7,9 @@ export default function Projects() {
   return (
     <div>
       <section ref = {projectRef} id = 'projectsSection' className='projectSection'>
-            <h1>Projects</h1>
+      <div className='projectSection__container'>
+        <h1>Project</h1>
+        </div>
       </section>
     </div>
   )

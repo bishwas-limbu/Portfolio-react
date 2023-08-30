@@ -7,7 +7,9 @@ export default function Contact() {
   return (
     <div>
       <section ref = {contactRef} id = 'contactSection' className='contactSection'>
-            <h1>Contact</h1>
+      <div className='contactSection__container'>
+        <h1>Contact</h1>
+        </div>
       </section>
     </div>
   )

@@ -10,20 +10,31 @@ import Resume from "./pages/resume/Resume";
 import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
 import NavProvider from "./context/NavContext";
+
+/* For particles js */
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import particles from "./helper/particles";
+
 function App() {
+  const handleInit = async (main) => {
+    await loadFull(main);
+  };
   return (
     <>
+      
+      <Particles id="particles" init={handleInit} options={particles} />
       <NavProvider>
+
         <NavBar />
-        <section className="mainSection">
-          <div className="mainSection__wrapper">
+        <div className="container">
             <Home />
             <About />
             <Resume />
             <Projects />
             <Contact />
-          </div>
-        </section>
+        </div>
+
       </NavProvider>
     </>
   );

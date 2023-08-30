@@ -5,13 +5,17 @@ import{NavContext} from '../../context/NavContext';
 //Importing react icons
 import {
   FaBars,
-  FaReact,
   FaFacebookSquare,
   FaGithubSquare,
   FaLinkedin,
 } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
-
+import {GrReactjs} from "react-icons/gr";
+// import{BiSolidContact} from 'react-icons/Bi'
+// import{AiOutlineHome} from 'react-icons/ai'
+// import{BsPerson} from 'react-icons/Bs'
+// import{HiNewspaper} from 'react-icons/hi'
+//HiNewspaper BsPerson AiOutlineHome
 //Importing css
 import "./style.scss";
 
@@ -38,22 +42,25 @@ console.log(activeLinkId);
     const scrollTo = `${e.target.getAttribute('value').toLowerCase()}Section`
     console.log(scrollTo);
    // setNameLink(scrollTo);
-    document.getElementById(scrollTo).scrollIntoView({behavior:"smooth"});
+   // document.getElementById(scrollTo).scrollIntoView({behavior:"smooth"});
+   const position = document.getElementById(scrollTo).offsetTop;
+   window.scrollTo({
+    top: position - 64,
+    left:0,
+    behavior:"smooth"
+  });
   }
  
   const handleClickLogo = () =>{
     document.getElementById('homeSection').scrollIntoView({behavior:"smooth"});
   }
 
-  const handleNewTab = (e) =>{
-    console.log(e);
-  }
   return (
     <div className="mainContainer">
       <div className="mainContainer__navContainer">
         <nav className="mainContainer__navContainer__navbar">
           <div className="mainContainer__navContainer__navbar__logo">
-            <FaReact size={30}  onClick={handleClickLogo} className="mainContainer__navContainer__navbar__logo__react"/>
+            <GrReactjs size={30}  onClick={handleClickLogo} className="mainContainer__navContainer__navbar__logo__react"/>
           </div>
           <div className="mainContainer__navContainer__navbar__menu">
             <ul

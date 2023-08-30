@@ -1,35 +1,58 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Lilita+One&family=Open+Sans:wght@300;400;500&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:wght@400;700&display=swap');
 :root{
     --theme-background-color : #111111;
     --theme-main-color : #F8F8F8;
     --theme-sub-text-color : #ffffff;
-    --theme-nav-background-color :#181818;
+    --theme-nav-background-color :#41448b;
     --green: #72b626;
     --nero: #252525;
     --darkGreen: #5b7553;
+    --font-family--heading1: 'Roboto Condensed', sans-serif;
+    --font-family--heading2: 'Comic Neue', cursive;
+    --font---subtext:#36454F;
+
+}
+/*
+font-family: 'Comic Neue', cursive;
+font-family: 'Lilita One', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box; /*box-sizing property allows us to include the padding and border in an element's total width and height. */
-    scroll-behavior: smooth; /*property adds smooth scrolling behavior when navigating between page sections using anchor links.*/
+html{
+    scroll-behavior: smooth;
 }
-body{
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
     overflow-y: scroll; 
-}
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.container{
+    max-width: 1170px;
+    padding-left: 20px;
+    padding-right:20px;
+    margin:auto;
+    font-family:  var(--font-family--heading1);
 }
 
-ul {
+
+
+ul{
     list-style: none;
 }
