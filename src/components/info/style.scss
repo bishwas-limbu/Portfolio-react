@@ -1,0 +1,115 @@
+.infoContainer{
+   overflow: hidden;
+    
+    h1{
+        text-align: center;
+        animation: moving 0.1s ease;
+
+    }
+    &__content{
+        animation: moving 1.5s ease;
+        margin-top: 1.5rem;
+     //   background-color: black;
+
+       &__ul{
+        li{
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            line-height: 3rem;
+            font-size: 1.2rem;
+            span{
+               padding-top: 0.2rem;
+            }
+            label{
+                margin-right: 1rem;
+                margin-left: 1rem;
+                font-weight: 600;
+            }
+            a{
+                text-decoration: none;
+                font-size: 1rem;
+
+            }
+        }
+       }
+    }
+}
+@keyframes moving {
+    from{transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+  }
+@media only screen and (max-width: 365px) {
+    .infoContainer{
+
+    
+        h1{
+            text-align: center;
+            font-size: 1.5rem;
+    
+        }
+        &__content{
+            margin-top: 1rem;
+         //   background-color: black;
+    
+           &__ul{
+            li{
+
+                line-height: 3rem;
+                font-size: 1.1rem;
+                span{
+                   padding-top: 0.1rem;
+                }
+                label{
+                    margin-right: 0.7rem;
+                    margin-left: 0.7rem;
+
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1rem;
+    
+                }
+            }
+           }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 339px) {
+    .infoContainer{
+
+    
+        h1{
+            text-align: center;
+            font-size: 1.3rem;
+    
+        }
+        &__content{
+            margin-top: 1rem;
+         //   background-color: black;
+    
+           &__ul{
+            li{
+
+                line-height: 3rem;
+                font-size: 1rem;
+                span{
+                   padding-top: 0.1rem;
+                }
+                label{
+                    font-size:0.9rem;
+                    margin-right: 0.7rem;
+                    margin-left: 0.7rem;
+
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1rem;
+    
+                }
+            }
+           }
+        }
+    }
+  }

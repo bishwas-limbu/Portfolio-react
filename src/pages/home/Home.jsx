@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./style.scss";
 import { useNav } from "../../hooks/useNav";
 import profileImage from "../../assets/profilepic.jpg";
@@ -7,6 +7,8 @@ import Typewriter from "typewriter-effect";
 
 export default function Home() {
   const homeRef = useNav("Home");
+
+
 
   const navigateToContactPage = () => {
     document.getElementById('contactSection').scrollIntoView({behavior:"smooth"});

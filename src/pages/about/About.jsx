@@ -1,16 +1,25 @@
-import React from "react";
+
 import "./style.scss";
 import { useNav } from "../../hooks/useNav";
 import lineImage from "../../assets/line.png";
 import { FcManager } from "react-icons/fc";
 import aboutImage from "../../assets/aboutme.jpg";
 
+import {useContext} from "react";
+import{NavContext} from '../../context/NavContext';
+
 export default function About() {
   const aboutRef = useNav("About");
+
+  const {activeLinkId} = useContext(NavContext);
+ // console.log(activeLinkId);
+
+
+ 
   return (
     <div>
       <section ref={aboutRef} id="aboutSection" className="aboutSection">
-        <div className="aboutSection__container">
+        <div className={`aboutSection__container ${activeLinkId == 'About'? 'show':'hide'}`}>
           <div className="aboutSection__container__title">
             <h1>
               About Me

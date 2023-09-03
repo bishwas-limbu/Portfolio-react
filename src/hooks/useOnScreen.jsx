@@ -8,14 +8,14 @@ export const useOnScreen = (ref) => {
      //console.log(entry);
     setIsOnScreen(entry.isIntersecting)
   }), {
-    threshold: 0.5,
+    threshold: 0.4,
   });
 
   useEffect(() => {
     observer.observe(ref.current);
 
     return () => observer.disconnect()
-  })
+  },[])
   
   return isOnScreen;
 }

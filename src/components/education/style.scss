@@ -1,0 +1,157 @@
+.educationContainer{
+    // overflow: hidden;
+    // animation: moving 1s ease;
+    h1{
+      
+        text-align: center;
+        animation: moving 1s ease;
+    }
+    &__content{
+        //animation: moving 0.5s ease;
+       ////// overflow: hidden;
+        margin-top: 1.5rem;
+        &__heading{
+            display:flex;
+            justify-content: space-between;
+            overflow: hidden;
+
+            h4{ 
+                animation: moving 1.5s ease;
+                span{
+                    padding-right: 0.2rem;
+                }
+                &:nth-child(1){
+                    display: flex;
+                    align-items: center;
+                }
+                
+                &:nth-child(2){
+                    font-size: 0.8rem;
+                    background-color: var(--theme-nav-background-color);
+                    color:#ffffff;
+                    border-radius: 1rem;
+                    padding: 0.2rem 0.5rem;
+                }
+            }
+        }
+        &__body{
+           animation: moving 2s ease;
+            margin-bottom: 1rem;
+            padding-left: 1.4rem;
+            h5{
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 530px){
+
+    .educationContainer{
+        h1{
+           // text-align: center;
+        }
+        &__content{
+            margin-top: 1.5rem;
+            &__heading{
+                display:flex;
+                justify-content: space-between;
+    
+                h4{
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    &:nth-child(2){
+                        font-size: 0.8rem;
+                        background-color: var(--theme-nav-background-color);
+                        color:#ffffff;
+                        border-radius: 1rem;
+                        padding: 0.2rem 0.5rem;
+                    }
+                }
+            }
+            &__body{
+                margin-bottom: 0.6rem;
+                
+                h5{
+                    line-height: 1.4rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 405px){
+
+    .educationContainer{
+        animation: moving 0.5s ease;
+        h1{
+           font-size: 1.3rem;
+        }
+        &__content{
+            margin-top: 1.5rem;
+            &__heading{
+                display:flex;
+                justify-content: space-between;
+    
+                h4{
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    &:nth-child(2){
+                        font-size: 0.7rem;
+                        background-color: var(--theme-nav-background-color);
+                        color:#ffffff;
+                        border-radius: 1rem;
+                        padding: 0.2rem 0.5rem;
+                    }
+                }
+            }
+            &__body{
+                margin-bottom: 0.68rem;
+                h5{
+                    line-height: 1.5rem;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes moving {
+    from{transform: translateX(20px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+  }
+
+@media only screen and (max-width: 355px){
+
+    .educationContainer{
+        h1{
+           // text-align: center;
+        }
+        &__content{
+            margin-top: 1.5rem;
+            &__heading{
+                display:flex;
+                justify-content: space-between;
+    
+                h4{
+                    font-size: 0.68rem;
+                    font-weight: bold;
+                    &:nth-child(2){
+                        font-size: 0.5rem;
+                        background-color: var(--theme-nav-background-color);
+                        color:#ffffff;
+                        border-radius: 1rem;
+                        padding: 0.2rem 0.5rem;
+                    }
+                }
+            }
+            &__body{
+                margin-bottom: 0.68rem;
+                h5{
+                    line-height: 1.4rem;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}

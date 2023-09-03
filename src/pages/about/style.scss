@@ -1,5 +1,6 @@
 .aboutSection{
-    height: 100vh;
+  height: 100vh;
+//  height: calc(100vh - 64px);
 //background-color: red;
     position: relative;
     //color:bisque;
@@ -52,14 +53,15 @@
            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
             &__left{
-             //  background-color: black;
+            //   background-color: black;
                 box-sizing: border-box;
                 height: 27.25rem;
                 margin: 1rem 0;
                flex: 0.5;
-
-
+                overflow: hidden;
+               //
                 img{
+                    animation: movingRight 1.5s ease;
                     height: 27.25rem;
                     width: 100%;
                 }
@@ -72,9 +74,10 @@
                 margin: 1rem 0;
                 flex:0.5;
                 color:var( --font---subtext);
-              
-
-                p{
+                overflow: hidden;
+              //  animation: moving 1s ease;
+                p{  
+                    animation: moving 2s ease;
                     padding:0 1rem;
                     line-height: 1.7rem;
                     word-spacing: 0.3rem;
@@ -83,6 +86,7 @@
                     
                 }
                 ul{
+                    animation: moving 1s ease;
                     padding:0 2.5rem;
                     list-style: disc;
                     
@@ -98,6 +102,7 @@
                     
                 }
                 h5{
+                    animation: moving 1s ease;
                     padding: 1rem 1rem 0 1rem;
                     line-height: 1rem;
                     word-spacing: 0.3rem;
@@ -111,7 +116,22 @@
     }
 }
 
+.hide{
+    display: none;
+}
 
+.show{
+   display: block;
+}
+@keyframes moving {
+    from{transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+  }
+
+  @keyframes movingRight {
+    from{transform: translateX(-50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+  }
 @media only screen and (max-width:965px){
     .aboutSection__container__content{
         margin:1rem 2.6rem;

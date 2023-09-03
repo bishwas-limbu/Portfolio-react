@@ -1,5 +1,7 @@
 import "./App.scss";
 
+
+
 // Importing component
 import NavBar from "./components/navbar/NavBar";
 
@@ -11,15 +13,22 @@ import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
 import NavProvider from "./context/NavContext";
 
+import { useEffect } from "react";
 /* For particles js */
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import particles from "./helper/particles";
 
+
 function App() {
   const handleInit = async (main) => {
     await loadFull(main);
   };
+  
+  // useEffect(() => {
+  //   window.history.scrollRestoration = 'auto'
+  // }, []);
+
   return (
     <>
       

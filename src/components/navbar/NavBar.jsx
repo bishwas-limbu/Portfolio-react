@@ -28,7 +28,7 @@ const navLinks = ["Home", "About", "Resume", "Projects", "Contact"];
 
 export default function NavBar() {
   const {activeLinkId} = useContext(NavContext);
-console.log(activeLinkId);
+//console.log(activeLinkId);
 
   const [toggleIcon, setToggleIcon] = useState(false);
   //const [nameLink, setNameLink] = useState("");

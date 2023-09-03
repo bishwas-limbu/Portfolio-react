@@ -10,7 +10,10 @@ font-family: 'Roboto Slab', serif;
 */
 
 .mainContainer {
+
     position: fixed;
+    top:0;
+    left: 0;
     width: 100%;
     color:white;
     background-color: var(--theme-nav-background-color);
