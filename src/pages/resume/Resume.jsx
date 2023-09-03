@@ -88,8 +88,8 @@ export default function Resume() {
   return (
     <div>
       <section ref={resumeRef} id="resumeSection" className="resumeSection">
-        {/* <div className={`resumeSection__container  ${activeLinkId == 'Resume'? 'show':'hide'}`}> */}
-        <div className="resumeSection__container">
+        <div className={`resumeSection__container  ${activeLinkId == 'Resume'? 'show':'hide'}`}>
+
           <div className="resumeSection__container__title">
             <h1>
               Resume

@@ -1,10 +1,10 @@
 .projectSection {
     height: 100vh;
   width: 100%;
-  background-color: yellow;
+  //background-color: yellow;
 
   &__container {
-  background-color: rgb(156, 109, 1);
+  //background-color: rgb(156, 109, 1);
    height:100vh;
     width: 100%;
     padding: 1rem 1rem;
@@ -15,7 +15,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: aqua;
+     // background-color: aqua;
 
       h1 {
         display: flex;
@@ -40,7 +40,7 @@
 
 
     &__content {
-        background-color: palegreen;
+       // background-color: palegreen;
             //  background-color: #ffffff;
     //  color:var(--theme-nav-background-color);
       // display: flex;
@@ -52,7 +52,7 @@
        height: 29.25rem;
        margin: 1rem 5rem;
        // padding: 0 3rem;
-       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
        padding:1rem;
 
        display: flex;
@@ -69,7 +69,7 @@
            display: none;
         }
        &__cards{
-            background-color:yellow;
+          //  background-color:yellow;
             height: 12rem;
             width:12rem;
             padding: 1rem 0.5rem;
@@ -77,10 +77,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
             animation: moving 1s ease;
             position: relative;
-
+            border-radius: 0.3rem;
+            overflow: hidden;
 
 
             &__span{
