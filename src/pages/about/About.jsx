@@ -22,7 +22,7 @@ export default function About() {
         <div className={`aboutSection__container ${activeLinkId == 'About'? 'show':'hide'}`}>
           <div className="aboutSection__container__title">
             <h1>
-              About Me
+              About &nbsp; <span style ={{ color:"var( --font---subtext)"}}>Me</span>
               <span>
                 <FcManager size={30} />
               </span>

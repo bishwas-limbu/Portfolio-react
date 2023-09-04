@@ -4,13 +4,17 @@ import { useNav } from "../../hooks/useNav";
 
 import { FcManager } from "react-icons/fc";
 import lineImage from "../../assets/line.png";
-import profilepic from "../../assets/profilepic.jpg";
+
 
 import portfolioImage from "../../assets/portfolioWebsite.png";
 import onlineStoreImage from "../../assets/onlineStore.png";
 import movieWebsiteImage from "../../assets/movieWebsite.png";
 import IMDbImage from "../../assets/IMDb.png";
 import comingSoonImage from "../../assets/comingSoon.png";
+
+
+import {useContext} from "react";
+import{NavContext} from '../../context/NavContext';
 
 const projectData = {
   title: [
@@ -57,11 +61,12 @@ const projectData = {
 
 export default function Projects() {
   const projectRef = useNav("Projects");
+  const {activeLinkId} = useContext(NavContext);
   return (
     <div>
       <section ref={projectRef} id="projectsSection" className="projectSection">
         {/* <div className={`resumeSection__container  ${activeLinkId == 'Resume'? 'show':'hide'}`}> */}
-        <div className="projectSection__container">
+        <div className={`projectSection__container ${activeLinkId == 'Projects'? 'show':'hide'}`}>
           <div className="projectSection__container__title">
             <h1>
               Projects
@@ -75,7 +80,7 @@ export default function Projects() {
           <div className="projectSection__container__content">
            {projectData.title.map((title, index) => {
                 return (
-                  <div  className="projectSection__container__content__cards">
+                  <div  className="projectSection__container__content__cards" key = {index}>
                     <div className="projectSection__container__content__cards__span">
                       <div className="projectSection__container__content__cards__span__h4">
                         <h4>{title}</h4>
@@ -98,133 +103,7 @@ export default function Projects() {
                   </div>
                 );
               })}
-            {/* <div className="projectSection__container__content__cards"></div> */}
-            {/* <div className="projectSection__container__content__cards">
-              <span
-                className="projectSection__container__content__cards__span"
-                style={{ width: "100%" }}
-              >
-                <h4 className="projectSection__container__content__cards__span__h4">
-                  Title
-                </h4>
-                <div className="projectSection__container__content__cards__span__div"></div>
-                <button>Github</button>
-                <button>Live</button>
-              </span>
-              <img
-                className="projectSection__container__content__cards__img"
-                src={profilepic}
-                alt="cardImage"
-              />
-            </div>
-            <div className="projectSection__container__content__cards">
-              <span
-                className="projectSection__container__content__cards__span"
-                style={{ width: "100%" }}
-              >
-                <h4 className="projectSection__container__content__cards__span__h4">
-                  Title
-                </h4>
-                <div className="projectSection__container__content__cards__span__div"></div>
-                <button>Github</button>
-                <button>Live</button>
-              </span>
-              <img
-                className="projectSection__container__content__cards__img"
-                src={profilepic}
-                alt="cardImage"
-              />
-            </div>
-            <div className="projectSection__container__content__cards">
-              <span
-                className="projectSection__container__content__cards__span"
-                style={{ width: "100%" }}
-              >
-                <h4 className="projectSection__container__content__cards__span__h4">
-                  Title
-                </h4>
-                <div className="projectSection__container__content__cards__span__div"></div>
-                <button>Github</button>
-                <button>Live</button>
-              </span>
-              <img
-                className="projectSection__container__content__cards__img"
-                src={profilepic}
-                alt="cardImage"
-              />
-            </div>
-            <div className="projectSection__container__content__cards">
-              <span
-                className="projectSection__container__content__cards__span"
-                style={{ width: "100%" }}
-              >
-                <h4 className="projectSection__container__content__cards__span__h4">
-                  Title
-                </h4>
-                <div className="projectSection__container__content__cards__span__div"></div>
-                <button>Github</button>
-                <button>Live</button>
-              </span>
-              <img
-                className="projectSection__container__content__cards__img"
-                src={profilepic}
-                alt="cardImage"
-              />
-            </div>
-            <div className="projectSection__container__content__cards">
-              <span
-                className="projectSection__container__content__cards__span"
-                style={{ width: "100%" }}
-              >
-                <h4 className="projectSection__container__content__cards__span__h4">
-                  Title
-                </h4>
-                <div className="projectSection__container__content__cards__span__div"></div>
-                <button>Github</button>
-                <button>Live</button>
-              </span>
-              <img
-                className="projectSection__container__content__cards__img"
-                src={profilepic}
-                alt="cardImage"
-              />
-            </div>
-            <div className="projectSection__container__content__cards">
-              <span
-                className="projectSection__container__content__cards__span"
-                style={{ width: "100%" }}
-              >
-                <h4 className="projectSection__container__content__cards__span__h4">
-                  Title
-                </h4>
-                <div className="projectSection__container__content__cards__span__div"></div>
-                <button>Github</button>
-                <button>Live</button>
-              </span>
-              <img
-                className="projectSection__container__content__cards__img"
-                src={profilepic}
-                alt="cardImage"
-              />
-            </div>
-            <div className="projectSection__container__content__cards">
-              <span
-                className="projectSection__container__content__cards__span"
-                style={{ width: "100%" }}
-              >
-                <h4 className="projectSection__container__content__cards__span__h4">
-                  Title
-                </h4>
-                <div className="projectSection__container__content__cards__span__div"></div>
-                <button>Github</button>
-                <button>Live</button>
-              </span>
-              <img
-                className="projectSection__container__content__cards__img"
-                src={profilepic}
-                alt="cardImage"
-              />
-            </div> */}
+
           </div>
         </div>
       </section>

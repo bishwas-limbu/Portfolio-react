@@ -4,7 +4,7 @@
     h1{
       
         text-align: center;
-        animation: moving 1s ease;
+        animation: moving 1.5s ease;
     }
     &__content{
         //animation: moving 0.5s ease;
@@ -16,7 +16,7 @@
             overflow: hidden;
 
             h4{ 
-                animation: moving 1.5s ease;
+                animation: moving 2s ease;
                 span{
                     padding-right: 0.2rem;
                 }
@@ -35,7 +35,7 @@
             }
         }
         &__body{
-           animation: moving 2s ease;
+           animation: moving 2.5s ease;
             margin-bottom: 1rem;
             padding-left: 1.4rem;
             h5{
