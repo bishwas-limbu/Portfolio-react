@@ -1,11 +1,11 @@
 .contactSection{
     height: 100vh;
     width: 100%;
-    background-color: green;
+  //  background-color: green;
    // position:relative;
 
     &__container{
-        background-color: rgb(1, 54, 34);
+     //   background-color: rgb(1, 54, 34);
         height:100vh;
         width:100%;
         // position:absolute;
@@ -17,7 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       background-color: aqua;
+   //    background-color: aqua;
   
         h1 {
           display: flex;
@@ -27,6 +27,11 @@
           letter-spacing: 0.2rem;
           font-size: 2rem;
           color: var(--theme-nav-background-color);
+
+          span{
+            display: flex;
+            align-items: center; 
+        }
         }
   
         h5 {
@@ -42,7 +47,7 @@
 
       &__content{
         margin: 1rem 5rem;
-        background-color: palevioletred;
+       // background-color: palevioletred;
         height:29.35rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding:1rem 1rem 1rem 0;
@@ -52,11 +57,11 @@
         //border-radius: 0.4rem;
 
         &__left{
-            background-color: aqua;
+          //  background-color: aqua;
             flex:0.35;
             padding:0.5rem;
             &__wrapper{
-               background-color: pink;
+            //   background-color: pink;
                height:18.3rem;
                margin: 4rem 0;
                overflow: hidden;
@@ -66,7 +71,7 @@
                     font-size: 1.3rem;
                     word-spacing:0.3rem;
                     line-height: 2.6rem;
-                    background-color: beige;
+                  //  background-color: beige;
                     height:40%;
                     display: flex;
                     //justify-content: center;
@@ -78,7 +83,7 @@
                }
 
                &__details{
-                 background-color: powderblue;
+               //  background-color: powderblue;
                  height:60%;
                  overflow: hidden;
                 
@@ -113,13 +118,13 @@
             }
         }
         &__right{
-            background-color: yellowgreen;
+          //  background-color: yellowgreen;
             flex:0.58;
             padding:0.5rem;
             overflow: hidden;
 
             &__title{
-              background-color: pink;
+            //  background-color: pink;
               height:15%;
               display: flex;
               justify-content: center;
@@ -131,7 +136,7 @@
             }
             &__content{
 
-              background-color: yellow;
+             // background-color: yellow;
               height:85%;
               padding: 2rem 0;
               overflow: hidden;
@@ -164,7 +169,7 @@
                 button{
                   margin-top: 0.4rem;
                   padding: 0.3rem 1rem;
-                  background-color: white;
+                //  background-color: white;
                   color: var(--theme-nav-background-color);
                   border: 2px solid var(--theme-nav-background-color);
                   border-radius: 1rem;
@@ -183,7 +188,7 @@
       }
       &__footer{
         margin-top: 2rem;
-        background-color: rgb(43, 89, 44);
+        //background-color: rgb(43, 89, 44);
         height:5.8rem;
 
       }

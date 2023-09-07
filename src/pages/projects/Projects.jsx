@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import { useNav } from "../../hooks/useNav";
 
-import { FcManager } from "react-icons/fc";
+import { FcManager,FcOldTimeCamera } from "react-icons/fc";
 import lineImage from "../../assets/line.png";
 
 
@@ -38,7 +38,7 @@ const projectData = {
     "",
   ],
   demoLink: [
-    "",
+    "https://beamish-axolotl-c00a4a.netlify.app",
     "https://polite-mousse-45e1d5.netlify.app",
     "https://dazzling-mandazi-a2b3bb.netlify.app",
     "https://rainbow-manatee-a50ec6.netlify.app",
@@ -71,7 +71,7 @@ export default function Projects() {
             <h1>
               Projects
               <span>
-                <FcManager size={30} />
+                <FcOldTimeCamera size={30} />
               </span>
             </h1>
             <h5>Why Choose Me ?</h5>

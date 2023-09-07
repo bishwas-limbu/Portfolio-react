@@ -1,12 +1,13 @@
 import {useState} from "react";
 import "./style.scss";
 import { useNav } from "../../hooks/useNav";
-import { FcManager } from "react-icons/fc";
+import { FcManager,FcGraduationCap } from "react-icons/fc";
 import lineImage from "../../assets/line.png";
 
 import Info from '../../components/info/Info';
 import Education from '../../components/education/Education';
 import Skills from '../../components/skills/Skills';
+
 
 import {useContext} from "react";
 import{NavContext} from '../../context/NavContext';
@@ -94,7 +95,7 @@ export default function Resume() {
             <h1>
               Resume
               <span>
-                <FcManager size={30} />
+                <FcGraduationCap size={30} />
               </span>
             </h1>
             <h5>Why Choose Me ?</h5>

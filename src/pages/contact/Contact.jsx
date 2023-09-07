@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.scss";
 import { useNav } from "../../hooks/useNav";
 
-import { FcManager } from "react-icons/fc";
+import { FcPhoneAndroid } from "react-icons/fc";
 import lineImage from "../../assets/line.png";
 
 import call from "../../assets/phone.png";
@@ -82,7 +82,7 @@ export default function Contact() {
               Contact &nbsp;{" "}
               <span style={{ color: "var( --font---subtext)" }}>Me</span>
               <span>
-                <FcManager size={30} />
+                <FcPhoneAndroid size={30} />
               </span>
             </h1>
             <h5>Stay connected with me</h5>

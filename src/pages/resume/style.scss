@@ -27,6 +27,11 @@
         letter-spacing: 0.2rem;
         font-size: 2rem;
         color: var(--theme-nav-background-color);
+
+        span{
+          display: flex;
+          align-items: center; 
+      }
       }
 
       h5 {
